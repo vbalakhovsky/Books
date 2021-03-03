@@ -1,0 +1,76 @@
+<!-- NAV BAR -->
+    {{>navbar}}
+
+
+<!-- HEADER/JUMBOTRON -->
+    <main class="w-screen flex justify-center mx-auto shadow-2xl jumbo">
+        <div class="text-center mt-8 mb-10 justify-center flex">
+            <br><br><br><br><br><br><br>
+            <!-- <img src="/images/library-2.jpeg" alt="Library"> -->
+          <h1 class="text-6xl mt-16 tracking-tight font-extrabold text-white z-1">
+            Make a new post
+            <!-- <span class="block text-white xl:inline">Sarah</span> -->
+          </h1>
+            <br><br>
+        </div>
+    </main>
+
+    <!-- div container for everything -->
+    <div class=" w-full mx-auto flex shadow-inner text-left justify-center form-container">
+      <!-- div container for username / user card -->
+      <div class=" pl-16 rounded w-full p-1 flex mx-auto my-auto text-3xl text-white">
+        <br><br><br>
+            <div class="form-container w-full pl-16 form font-extrabold">
+                <br>
+                <form class=" pl-8" method="POST" action="/submit-post" >
+                    <label class="p-2 text-gray-800" for="name">Name:</label><br>
+                    <input class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2" type="text" id="name" name="name"><br><br>
+                    <label class="p-2 text-gray-800" for="caption">Profile Caption:</label><br>
+                    <input class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2" type="text" id="caption" name="caption"><br><br>
+                    <label class="p-2 text-gray-800" for="favoriteBook">Favorite Book:</label><br>
+                    <input class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2" type="text" id="favoriteBook" name="favoriteBook"><br><br>
+                    <label class="p-2 text-gray-800"for="clubName">Club Name:</label><br>
+                        <select class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-4" id="club" name="cars">
+                        <option value="forest">Forest</option>
+                        <option value="beach">Beach</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="river">River</option>
+                        </select>
+                        <br><br>
+                    <label class="p-2 text-gray-800 text-left" for="postTitle">Post Title:</label><br>
+                    <input class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2" type="text" id="postTitle" name="postTitle"><br><br>
+                    <label class="p-2 text-gray-800 text-left" for="postBody">Post Body:</label><br>
+                    <textarea class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2 w-16 text-left" name="message" style="width:500; height:300;">
+                        </textarea><br>
+                         <div class="mb-1 mx-3xl font-extrabold text-3xl text-yellow-100 text-center">
+                        <div class="inline-block bg-gradient-to-b from-green-600 to-green-700 mx-10 px-10 directory shadow-2xl">
+                            <button class="mx-4xl m-3 new-post-submit" type="submit">Submit</button> 
+                        </div>
+                        <br><br><br>
+                    </div>
+                  </form>
+                   
+                </div>
+            </div>
+            <div class="w-3/4 side-image">
+            </div>
+      </div>
+
+      <main class="w-screen flex justify-center mx-auto shadow-2xl jumbo">
+        <div class="text-center mt-4 mb-4 justify-center flex">
+            <br><br>
+            <!-- <img src="/images/library-2.jpeg" alt="Library"> -->
+            <br><br>
+        </div>
+    </main>
+
+      <!-- <div class="bg-green-900 p-1 mx-auto flex shadow-inner text-center justify-center"></div>
+      <div class="w-screen mx-auto shadow-inner">
+        <div class="text-center text-white font-bold text-4xl bg-gradient-to-b from-green-700 to-gray-900 rounded-lg">
+            <br><br>
+            <div class="max-w-auto text-center justify-center mx-8xl">
+            </div>
+        </div> -->
+  </div>
+     
+    </div>

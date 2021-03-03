@@ -1,0 +1,123 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../assets/css/style-new-post.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script> src="../../tailwind.config.js"</script>  
+</head>
+
+<body>
+
+
+    <!-- NAV BAR -->
+    <nav class="bg-gradient-to-t from-green-600 to-green-700">
+        <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8 shadow shadow-inner">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                  <!-- need to get the icon working here -->
+                <i class=" bg-white fas fa-book-open"></i>
+                <!-- <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow"> -->
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <!-- Current: "bg-yellow-900 text-white", Default: "text-yellow-300 hover:bg-yellow-700 hover:text-white" -->
+                    <a href="/home" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Home</a>
+      
+                    <a href="/posts" class="bg-yellow-900 text-white px-3 py-2 rounded-md text-xl font-medium">Posts</a>
+      
+                    <a href="/users" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Users</a>
+      
+                    <a href="/clubs" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Clubs</a>
+
+                    <a href="/reference" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Reference</a>
+                  </div>
+              </div>
+            </div>
+            <a href="/">
+                <span class="block text-green-200 text-xl font-bold inline text-right">Book<span class="block text-white text-xl font-bold inline text-right">Worms</span>
+                </span>
+            </a>
+            
+        </div>
+    </nav>
+
+    <div class="bg-green-800 p-1 mx-auto flex shadow-inner text-center justify-center"></div>
+
+    <!-- HEADER/JUMBOTRON -->
+    <main class="w-screen flex justify-center mx-auto shadow-2xl jumbo">
+        <div class="text-center mt-8 mb-10 justify-center flex">
+            <br><br><br><br><br><br><br>
+            <!-- <img src="/images/library-2.jpeg" alt="Library"> -->
+          <h1 class="text-6xl mt-16 tracking-tight font-extrabold text-white z-1">
+            Make a new post
+            <!-- <span class="block text-white xl:inline">Sarah</span> -->
+          </h1>
+            <br><br>
+        </div>
+    </main>
+
+    <!-- div container for everything -->
+    <div class=" w-full mx-auto flex shadow-inner text-left justify-center form-container">
+      <!-- div container for username / user card -->
+      <div class=" pl-16 rounded w-full p-1 flex mx-auto my-auto text-3xl text-white">
+        <br><br><br>
+            <div class="form-container w-full pl-16 form font-extrabold">
+                <br>
+                <form id="postForm" class="pl-8">
+                    <label class="p-2 text-gray-800" for="name">Name:</label><br>
+                    <input class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2" type="text" id="name" name="name"><br><br>
+                    <label class="p-2 text-gray-800" for="caption">Profile Caption:</label><br>
+                    <input class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2" type="text" id="caption" name="caption"><br><br>
+                    <label class="p-2 text-gray-800" for="favoriteBook">Favorite Book:</label><br>
+                    <input class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2" type="text" id="favoriteBook" name="favoriteBook"><br><br>
+                    <label class="p-2 text-gray-800"for="clubName">Club Name:</label><br>
+                        <select class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-4" id="clubName" name="cars">
+                        <option value="forest">Forest</option>
+                        <option value="beach">Beach</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="river">River</option>
+                        </select>
+                        <br><br>
+                    <label class="p-2 text-gray-800 text-left" for="postTitle">Post Title:</label><br>
+                    <input class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2" type="text" id="postTitle" name="postTitle"><br><br>
+                    <label class="p-2 text-gray-800 text-left" for="postBody">Post Body:</label><br>
+                    <textarea class="bg-gradient-to-b from-green-800 to-green-900 text-white rounded-lg p-2 w-16 text-left" name="postBody" id="postBody" style="width:500; height:300;">
+                        </textarea><br>
+                  </form>
+                    <div class="mb-1 mx-3xl font-extrabold text-3xl text-yellow-100 text-center">
+                        <div class="inline-block bg-gradient-to-b from-green-600 to-green-700 mx-10 px-10 directory shadow-2xl">
+                            <button type="submit" id="submitBtn" class="mx-4xl m-3 new-post-submit">Submit</button> 
+                        </div>
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="w-3/4 side-image">
+            </div>
+      </div>
+
+      <main class="w-screen flex justify-center mx-auto shadow-2xl jumbo">
+        <div class="text-center mt-4 mb-4 justify-center flex">
+            <br><br>
+            <!-- <img src="/images/library-2.jpeg" alt="Library"> -->
+            <br><br>
+        </div>
+    </main>
+
+      <!-- <div class="bg-green-900 p-1 mx-auto flex shadow-inner text-center justify-center"></div>
+      <div class="w-screen mx-auto shadow-inner">
+        <div class="text-center text-white font-bold text-4xl bg-gradient-to-b from-green-700 to-gray-900 rounded-lg">
+            <br><br>
+            <div class="max-w-auto text-center justify-center mx-8xl">
+            </div>
+        </div> -->
+  </div>
+     
+    </div>
+ </body>
+
+ <!-- Custom Script -->
+ <script src="../js/new-post.js" type="text/javascript"></script>

@@ -1,0 +1,131 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../assets/css/style-single-post.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script> src="../../tailwind.config.js"</script>  
+</head>
+
+<body>
+
+
+    <!-- NAV BAR -->
+    <nav class="bg-gradient-to-t from-green-600 to-green-700">
+        <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8 shadow shadow-inner">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                  <!-- need to get the icon working here -->
+                <i class=" bg-white fas fa-book-open"></i>
+                <!-- <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow"> -->
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <!-- Current: "bg-yellow-900 text-white", Default: "text-yellow-300 hover:bg-yellow-700 hover:text-white" -->
+                    <a href="/home" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Home</a>
+      
+                    <a href="/posts" class="bg-yellow-900 text-white px-3 py-2 rounded-md text-xl font-medium">Posts</a>
+      
+                    <a href="/users" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Users</a>
+      
+                    <a href="/clubs" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Clubs</a>
+
+                    <a href="/reference" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Reference</a>
+                  </div>
+              </div>
+            </div>
+            <a href="/">
+                <span class="block text-green-200 text-xl font-bold inline text-right">Book<span class="block text-white text-xl font-bold inline text-right">Worms</span>
+                </span>
+            </a>
+            
+        </div>
+    </nav>
+
+    <div class="bg-green-900 p-1 mx-auto flex shadow-inner text-center justify-center"></div>
+
+    <!-- HEADER/JUMBOTRON -->
+    <main class="w-screen flex justify-center mx-auto shadow-2xl jumbo">
+        <div class="text-center mt-10 mb-10 justify-center flex">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <!-- <img src="/images/library-2.jpeg" alt="Library"> -->
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 z-1">
+            <figure class="flex bg-gray-100 w:10 rounded-xl p-8 justify-center user-card">
+              <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-md rounded-full mx-auto" src="assets/images/forest-1.jpeg" alt="" width="384" height="512">
+          <div class="pt-6 md:p-8 text-left space-y-4">
+              <blockquote >
+                  <p class="text-xl font-semibold">
+                  My name's Sarah and I like to read.
+                  </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                  <div class="text-cyan-600 user-name">
+                  Sarah Dayan
+                  </div>
+                  <div class="text-gray-500 location">
+                  The Alchemist
+                  </div>
+                  <div class="text-green-400 location">
+                      Club: Forest
+                  </div>
+              </figcaption>
+              </div>
+          </figure>
+            <!-- <span class="block text-white xl:inline">Sarah</span> -->
+          </h1>
+            <br><br>
+        </div>
+    </main>
+
+    <div class="bg-gradient-to-b from-green-700 to-green-900 p-4 mx-auto flex shadow-inner text-center justify-center"></div>
+
+    <!-- div container for everything -->
+    <div class="pt-20 pb-24 w-full mx-auto flex shadow-inner text-left justify-center post-background rounded-lg">
+      <!-- div container for post -->
+      <div class="p-16 rounded post-container flex max-width-6xl mx-auto my-auto text-3xl text-white bg-green-900">
+        <br><br><br>
+            <div class="w-full pl-16 form font-extrabold post-text-background">
+                <br>
+                <div class="p-2 text-gray-900">
+                    <p>The Alechemist is awesome!</p>
+                    <br>
+                    <p class="p-2 font-bold text-gray-900">I read the Alchemist over the long weekend and had a great time. I really liked the part with the potions.
+                    </p>
+                </div>
+                
+                    <div class="mb-1 mx-3xl font-extrabold text-3xl text-yellow-100 text-center">
+                        <br><br>
+                        <div class="inline-block bg-gradient-to-b from-green-600 to-green-700 mx-10 px-10 directory shadow-2xl">
+                            <button class="mx-4xl m-3 new-post-submit">Back</button> 
+                        </div>
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+      <div class="bg-gradient-to-t from-green-700 to-green-900 p-4 mx-auto flex shadow-inner text-center justify-center"></div>
+
+      <!-- <main class="w-screen flex justify-center mx-auto shadow-2xl jumbo">
+        <div class="text-center mt-4 mb-4 justify-center flex">
+            <br><br>
+            <img src="/images/library-2.jpeg" alt="Library">
+            <br><br>
+        </div>
+    </main>
+
+      <!-- <div class="bg-green-900 p-1 mx-auto flex shadow-inner text-center justify-center"></div>
+      <div class="w-screen mx-auto shadow-inner">
+        <div class="text-center text-white font-bold text-4xl bg-gradient-to-b from-green-700 to-gray-900 rounded-lg">
+            <br><br>
+            <div class="max-w-auto text-center justify-center mx-8xl">
+            </div>
+        </div> -->
+  </div>
+     
+</div>
+      
+
+ </body>

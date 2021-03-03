@@ -1,0 +1,95 @@
+nav {
+    box-shadow: 10px;
+}
+
+main {
+    background: url('../images/library-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-size: cover;
+    border-radius: 25px; 
+    border-bottom: 5px;
+}
+
+body {
+    background-color: rgb(251, 233, 209);
+    /* background-image: linear-gradient(to right, rgb(250, 237, 220), rgb(170, 126, 68)); */
+    opacity: .9;
+    box-shadow: 10px;
+}
+
+h1 {
+    margin-top: 500px;
+}
+
+.directory {
+    border-radius: 8px;
+}
+
+.directory-item {
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.directory-item p {
+    margin-top: 120px;
+}
+
+#posts {
+    background: url('../images/typewriter-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-size: cover;
+    border-radius: 25px; 
+    border-bottom: 5px;
+}
+
+#users {
+    background: url('../images/reader-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-size: cover;
+    border-radius: 25px; 
+    border-bottom: 5px;
+}
+
+#clubs {
+    background: url('../images/library-3.jpeg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-size: cover;
+    border-radius: 25px; 
+    border-bottom: 5px;
+}
+
+.user-card {
+    height: auto;
+    max-width: 700;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+#results {margin-left: 40px;
+        margin-top: 20px;
+}
+#search {margin-left: 40px;
+    margin-top: 20px}
+#searchBox {margin-left: 40px;
+    margin-top: 20px}
+
+#word{margin-left: 40px;
+    margin-top: 20px}
+
+#definition{margin-left: 40px;
+    margin-top: 20px}

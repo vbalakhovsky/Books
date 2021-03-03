@@ -1,0 +1,78 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../assets/css/style-home.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script> src="../../tailwind.config.js"</script>  
+</head>
+<nav class="bg-gradient-to-t from-green-600 to-green-700">
+        <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8 shadow shadow-inner">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <i class=" bg-white fas fa-book-open"></i>
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <a href="/home" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Home</a>
+                  <a href="/posts" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Posts</a>
+                  <a href="/users" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Users</a>
+                  <a href="/clubs" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Clubs</a>
+                  <a href="/reference" class="bg-yellow-900 text-white px-3 py-2 rounded-md text-xl font-medium">Reference</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </nav>
+<body>
+     <br>
+      <br>
+       <br>
+  <p>
+In The Book Club Your New Name Will be:
+   {{result.adjective}}  {{result.noun}}
+  </p> 
+ <input id = "search">
+    <button onclick="getBooks()">Find Books</button>
+    <br>
+    <div id = "results"></div>
+    <br />
+    <br />
+ <input id = "searchBox" placeholder="Search Word" />
+  <button onclick="wordSearch()">Search Word</button>
+    <div id = "word"></div>
+    <div id = "definition"></div>
+ </body>
+ <script>
+function getBooks() {
+document.getElementById('results').innerHTML ="";
+fetch("http://openlibrary.org/search.json?q="+document.getElementById("search").value)
+.then(a=>a.json()).then(response=>{
+    for(var i = 0; i<3; i++){document.getElementById("results").innerHTML+="<h3>"+response.docs[i].title+"</h3>"+ response.docs[i].author_name[0] + "<br>"+response.docs[i].first_sentence +"<br><img src = 'http://covers.openlibrary.org/b/isbn/"+response.docs[i].isbn[0]+"-M.jpg'><br>";
+}
+});
+}
+function wordSearch() {
+   // document.getElementById('searchResult').style.visibility = 'visible';
+    var word = document.getElementById('word');
+    var definition = document.getElementById('definition');
+    var wordToSearch = document.getElementById('searchBox').value;
+    var request1 = new XMLHttpRequest();
+    request1.open('GET', 'https://api.wordnik.com/v4/word.json/' + wordToSearch + '/definitions?limit=10&includeRelated=false&useCanonical=false&includeTags=false&api_key=fqikzuj3hyn59vnus68xh1nxvhrwh20ashp2njucxf3cm3zp6', true);
+    request1.onload = function () {
+        var data = JSON.parse(this.response);
+        if (request1.status >= 200 && request1.status < 400) {
+            var i = Math.ceil(Math.random() * 10);      //  get a random number from 1 to 10
+            word.innerHTML = data[i].word;      //  get a random definition
+            definition.innerHTML = data[i].text;
+        } else {
+            word.innerHTML = "Error";
+            definition.innerHTML = "Error";
+        }
+    }
+    request1.send();
+}
+</script>
+</html>

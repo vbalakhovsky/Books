@@ -1,0 +1,27 @@
+
+body {
+    background: url('../images/library-1.jpeg');
+    background-repeat: no-repeat;
+     /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-size: cover;
+    background-color: black;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-color: black;
+}
+
+
+#results {margin-left: 40px;
+    margin-top: 20px;
+}
+#search {margin-left: 40px;
+margin-top: 20px}
+#searchBox {margin-left: 40px;
+margin-top: 20px}
+
+#word{margin-left: 40px;
+margin-top: 20px}
+
+#definition{margin-left: 40px;
+margin-top: 20px}

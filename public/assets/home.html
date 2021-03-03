@@ -1,0 +1,212 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../assets/css/style-home.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script> src="../../tailwind.config.js"</script>  
+</head>
+
+<body>
+
+ </body>
+    <!-- NAV BAR -->
+    <nav class="bg-gradient-to-t from-green-600 to-green-700">
+        <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8 shadow shadow-inner">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                  <!-- need to get the icon working here -->
+                <i class=" bg-white fas fa-book-open"></i>
+                <!-- <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow"> -->
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <!-- Current: "bg-yellow-900 text-white", Default: "text-yellow-300 hover:bg-yellow-700 hover:text-white" -->
+                  <a href="/home" class="bg-yellow-900 text-white px-3 py-2 rounded-md text-xl font-medium">Home</a>
+    
+                  <a href="/posts" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Posts</a>
+    
+                  <a href="/users" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Users</a>
+    
+                  <a href="/clubs" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Clubs</a>
+
+                  <a href="/reference" class="text-yellow-200 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-l font-medium">Reference</a>
+                </div>
+              </div>
+            </div>
+            <a href="/">
+                <span class="block text-green-200 text-xl font-bold inline text-right">Book<span class="block text-white text-xl font-bold inline text-right">Worms</span>
+                </span>
+            </a>
+            
+        </div>
+    </nav>
+
+    <div class="bg-green-800 p-1 mx-auto flex shadow-inner text-center justify-center"></div>
+
+    <!-- HEADER/JUMBOTRON -->
+    <main class="mt-10 w-screen mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 shadow-2xl">
+        <div class="sm:text-center lg:text-center">
+            <br><br><br><br><br><br><br><br><br>
+          <h1 class="text-4xl mt-15 tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block text-green-200 xl:inline">Welcome to</span>
+            <span class="block text-white xl:inline">BookWorms.</span>
+          </h1>
+            <br><br>
+          <!-- <p class="text-center text-white text-4xl">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+          </p>
+          <div class="justify-center">
+            <div class="mt-10 rounded-md shadow">
+              <a href="#" class="items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-yellow-100 hover:bg-yellow-600 md:py-4 md:text-lg md:px-10">
+                Enter
+              </a>
+            </div>
+          </div> -->
+        </div>
+    </main>
+      <br><br><br><br>
+        <!-- DESCRIPTION/DIRECITONS -->
+    <div class="mt-10 w-screen mx-auto shadow-inner">
+          <div class="mt-15 text-center text-white font-bold text-4xl bg-gradient-to-b from-green-600 to-green-700">
+              <br><br><br>
+              <div class="max-w-auto text-center justify-center mx-8xl">
+                  <p>
+                    The only place on the web tailored to coders and book lovers alike.
+                  </p>
+                  <br>
+                  <p>
+                    A free forum to share and discuss favorite reads. 
+                  </p>
+              </div>
+              
+              <br><br><br>
+          </div>
+    </div>
+
+    <!-- DIRECTORY -->
+    <div class="mx-auto shadow-inner">
+        <div class="mb-10 mx-3xl font-extrabold text-6xl text-white text-center">
+            <br>
+            <div class="inline-block bg-gradient-to-b from-green-600 to-green-700 mx-10 px-10 directory shadow-2xl">
+                <h2 class="mx-4xl m-3">DIRECTORY</h2>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="mx-auto shadow-inner">
+        <div class="mb-10 mx-2xl font-extrabold text-6xl text-white text-center bg-gradient-to-b from-green-600 to-green-700">
+            <div class="space-x-56 mt-10xl justify-evenly">
+                <!-- POSTS -->
+                <a href="/posts" id="posts-link">
+                    <div id="posts" class="inline-block justify-evenly bg-green-800 directory-item">
+                        <div>
+                            <p>
+                                Posts
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- USERS -->
+                <a href="/users" id="users-link">
+                    <div id="users" class="inline-block justify-evenly bg-green-800 directory-item">
+                        <div>
+                            <p>
+                                Users
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                  <!-- CLUBS -->
+                  <a href="/clubs" id="clubs-link">
+                    <div id="clubs" class="inline-block justify-evenly bg-green-800 directory-item">
+                        <div>
+                            <p>
+                                Clubs
+                            </p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+        </div>
+    </div>
+
+    <!-- <div class="m-auto shadow-inner justify-center">
+        <div class="mb-10 mx-2xl  bg-gradient-to-r from-green-600 to-green-700">
+            <div class="space-x-30 mt-10xl justify-evenly">
+                <figure class=" pl-100px flex bg-gray-100 w:10 rounded-xl p-8 user-card">
+                    <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-md rounded-full mx-auto" src="images/library.jpeg" alt="" width="384" height="512">
+                <div class="pt-6 md:p-8 text-left space-y-4">
+                    <blockquote >
+                        <p class="text-xl font-semibold">
+                        My name's Sarah and I like to read.
+                        </p>
+                    </blockquote>
+                    <figcaption class="font-medium">
+                        <div class="text-cyan-600 user-name">
+                        Sarah Dayan
+                        </div>
+                        <div class="text-gray-500 location">
+                        New York
+                        </div>
+                        <div class="text-green-400 location">
+                            Plants Club
+                        </div>
+                    </figcaption>
+                    </div>
+                </figure>
+
+            <figure class=" pl-100px flex bg-gray-100 w:10 rounded-xl p-8 user-card">
+                <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-md rounded-full mx-auto" src="images/library.jpeg" alt="" width="384" height="512">
+            <div class="pt-6 md:p-8 text-left space-y-4">
+                <blockquote >
+                    <p class="text-xl font-semibold">
+                    My name's Sarah and I like to read.
+                    </p>
+                </blockquote>
+                <figcaption class="font-medium">
+                    <div class="text-cyan-600 user-name">
+                    Sarah Dayan
+                    </div>
+                    <div class="text-gray-500 location">
+                    New York
+                    </div>
+                    <div class="text-green-400 location">
+                        Plants Club
+                    </div>
+                </figcaption>
+                </div>
+            </figure>
+        </div>
+      </div>
+      </div>
+      <br>
+      <div>
+        <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0 user-card">
+            <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="images/library.jpeg" alt="" width="384" height="512">
+            <div class="pt-6 md:p-8 text-center space-y-4">
+              <blockquote>
+                <p class="text-lg font-semibold">
+                  “Tailwind CSS is the only framework that I've seen scale
+                  on large teams. It’s easy to customize, adapts to any design,
+                  and the build size is tiny.”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                <div class="text-cyan-600">
+                  Sarah Dayan
+                </div>
+                <div class="text-gray-500">
+                  Staff Engineer, Algolia
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+      </div>
+      <br><br><br><br> -->
+      
+</html>
+    
